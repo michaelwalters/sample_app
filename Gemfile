@@ -6,6 +6,7 @@ gem 'rails', '3.2.11'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg', '0.15.1'
+gem 'bcrypt-ruby', '3.0.1'
 
 group :development do
 #  gem 'sqlite3', '1.3.7'
@@ -15,11 +16,14 @@ end
 group :production do
 #  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
+
 end
 
 group :test do
+  gem 'rspec-rails', '2.13.1'
   gem 'selenium-webdriver', '2.0.0'
   gem 'capybara', '2.1.0'
+#  gem 'capybara', '1.1.2'
 end
 
 group :doc do
